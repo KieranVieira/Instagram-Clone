@@ -1,0 +1,46 @@
+.comment-container{
+ margin: 10px 0;
+}
+
+.comment{
+    display: flex;
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+.comment h1{
+    font-size: 1.3rem;
+    margin: unset;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.comment h1 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.add-comment {
+    border-top: 1px solid #DBDBDB;
+    margin: 5px 0x;
+    display: flex;
+    justify-content: space-between
+}
+
+.add-comment input{
+    border: unset;
+    padding: 15px 5px;
+    width:90%;
+    font-weight: 100;
+}
+
+.post-time{
+    font-weight: 100;
+    color: grey;
+}
+
+.add-comment i{
+    font-size: 1.5rem;
+    padding: 15px 0;
+}

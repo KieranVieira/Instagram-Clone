@@ -1,0 +1,92 @@
+.login-container{
+    width: 350px;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 25px 0;
+    margin: 15px auto;
+}
+
+.login-container img{
+    width: 55%;
+    height: auto;
+    margin: 0 80px;
+}
+
+.login-container h2{
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    color: grey;
+}
+
+.login-container h3{
+    width: 220px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    text-align: center;
+    color: grey;
+}
+
+.login-container h3 span{
+    font-weight: bold
+}
+
+.login-container h4{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 8px 0;
+    color: grey;
+}
+
+.login-container button{
+    width: 270px;
+    background-color: #458eff;
+    color: white;
+    font-weight: bold;
+    border: unset;
+    padding: 8px 5px;
+    margin: 0 40px;
+    border-radius: 3px;
+}
+
+.login-container button i{
+    font-size: 2rem;
+    padding: 0 5px 0 0;
+}
+
+.login-form-container{
+    width: 270px;
+    margin: 10px auto;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form button{
+    width: 270px;
+    margin: 10px auto 0 auto;
+    background-color: #458eff;
+    color: white;
+    font-weight: bold;
+    border: unset;
+    padding: 8px 5px;
+    border-radius: 3px;
+}
+
+.login-form input{
+    padding: 11px 8px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    background-color: #FAFAFA;
+}
+
+.login-terms{
+    padding: 15px
+}
