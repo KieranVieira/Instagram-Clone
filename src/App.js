@@ -19,7 +19,6 @@ class App extends Component {
     this.setState({
       dummyData: dummyData
     })
-    localStorage.setItem('loggedIn', false);
   }
 
   searchBar = e => {

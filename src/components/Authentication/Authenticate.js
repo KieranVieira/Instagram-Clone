@@ -14,6 +14,7 @@ const Authenticate = App => {
             localStorage.setItem('username', e.target.username.value);
             localStorage.setItem('fullname', e.target.fullname.value);
             localStorage.setItem('password', e.target.password.value);
+            localStorage.removeItem('loggedIn');
             localStorage.setItem('loggedIn', true);
         }
 

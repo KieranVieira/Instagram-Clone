@@ -5,10 +5,12 @@ import instagramLogo from '../../assets/instagram-logo.png'
 class Login extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            
-        }
     }
+
+componentDidMount(){
+    localStorage.setItem('loggedIn', false);
+}
+
     render(){
         return(
             <div className="login-container">
