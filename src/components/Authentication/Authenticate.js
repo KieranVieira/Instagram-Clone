@@ -6,7 +6,7 @@ const Authenticate = App => {
         constructor(props){
             super(props);
             this.state = {
-                loggedIn: localStorage.getItem('loggedIn'),
+                loggedIn: false,
             }
         }
 
@@ -14,12 +14,13 @@ const Authenticate = App => {
             localStorage.setItem('username', e.target.username.value);
             localStorage.setItem('fullname', e.target.fullname.value);
             localStorage.setItem('password', e.target.password.value);
-            localStorage.removeItem('loggedIn');
-            localStorage.setItem('loggedIn', true);
+            this.setState({
+                loggedIn:true
+            })
         }
 
         render(){
-            if(this.state.loggedIn){
+            if(this.state.loggedIn === true){
                 return <App dummyData={this.props.dummyData} handleChange={this.props.handleChange}/>
             }else return <Login login={this.login} />
         }
