@@ -20,7 +20,7 @@ const Authenticate = App => {
         }
 
         render(){
-            if(this.state.loggedIn === true){
+            if(this.state.loggedIn){
                 return <App dummyData={this.props.dummyData} handleChange={this.props.handleChange}/>
             }else return <Login login={this.login} />
         }

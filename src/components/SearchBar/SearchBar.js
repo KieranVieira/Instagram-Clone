@@ -6,7 +6,7 @@ const SearchBar = props => {
         <div className="search-bar-main">
             <div className="search-bar-container">
                 <div className="search-bar-left">
-                    <i className="fab fa-instagram"></i> Finstagram 
+                <a href="https://kieranvieira.com/"><i className="fab fa-instagram"></i> Finstagram </a>
                 </div>
                 <div className="search-bar-middle">
                     <form>
@@ -18,9 +18,9 @@ const SearchBar = props => {
                     </form>
                 </div>
                 <div className="search-bar-right">
-                    <i className="far fa-compass"></i>
-                    <i className="far fa-heart"></i>
-                    <i className="far fa-user"></i>
+                    <a href="https://kieranvieira.com/"><i className="far fa-compass"></i></a>
+                    <a href="https://kieranvieira.com/"><i className="far fa-heart"></i></a>
+                    <a href="https://kieranvieira.com/"><i className="far fa-user"></i></a>
                 </div>
             </div>
         </div>

@@ -52,7 +52,7 @@ class CommentSection extends React.Component{
                     {this.state.comments.map(comment => {
                         return (
                         <div className="comment">
-                            <h1> <a href="#">{comment.username}</a></h1>
+                            <h1> <a href="https://kieranvieira.com/">{comment.username}</a></h1>
                             <p>{comment.text}</p>
                         </div>
                         )

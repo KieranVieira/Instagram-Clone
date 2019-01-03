@@ -34,7 +34,7 @@ const FooterContainer = props => {
             <div className="suggestion-container">
                 <div className="suggestion-header">
                     <h1>Suggestions For You</h1>
-                    <a href="#">See All</a>
+                    <a href="https://kieranvieira.com/">See All</a>
                 </div>
                 {users.map(user => {
                     return(
@@ -44,7 +44,7 @@ const FooterContainer = props => {
                                 <h2>{user.name}</h2>
                                 <p>{user.reccomendedFrom}</p>
                             </div>
-                            <a href="">Follow</a>
+                            <a href="https://kieranvieira.com/">Follow</a>
                         </div>
                     )
                 })}
@@ -52,17 +52,17 @@ const FooterContainer = props => {
 
             <div className="footer-links">
                 <ul>
-                    <a href="#">About Us •</a>
-                    <li><a href="#">Support •</a></li>
-                    <li><a href="#">Press •</a></li>
-                    <li><a href="#">API •</a></li>
-                    <li><a href="#">Jobs •</a></li>
-                    <li><a href="#">Privacy •</a></li>
-                    <li><a href="#">Terms •</a></li>
-                    <li><a href="#">Directory •</a></li>
-                    <li><a href="#">Profiles •</a></li>
-                    <li><a href="#">Hashtags •</a></li>
-                    <li><a href="#">Language</a></li>
+                    <a href="https://kieranvieira.com/">About Us •</a>
+                    <li><a href="https://kieranvieira.com/">Support •</a></li>
+                    <li><a href="https://kieranvieira.com/">Press •</a></li>
+                    <li><a href="https://kieranvieira.com/">API •</a></li>
+                    <li><a href="https://kieranvieira.com/">Jobs •</a></li>
+                    <li><a href="https://kieranvieira.com/">Privacy •</a></li>
+                    <li><a href="https://kieranvieira.com/">Terms •</a></li>
+                    <li><a href="https://kieranvieira.com/">Directory •</a></li>
+                    <li><a href="https://kieranvieira.com/">Profiles •</a></li>
+                    <li><a href="https://kieranvieira.com/">Hashtags •</a></li>
+                    <li><a href="https://kieranvieira.com/">Language</a></li>
                 </ul>
                 <p><a href="https://kieranvieira.com/" target="_blank">(c) 2018 KIERAN VIEIRA</a></p>
             </div>

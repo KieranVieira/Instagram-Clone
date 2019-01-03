@@ -23,6 +23,11 @@
     margin: 15px 15px;
 }
 
+.post-header h1 a{
+    color: black;
+    text-decoration: none;
+}
+
 .post-header img{
     border: 1px solid #DBDBDB;
     border-radius: 500px;
