@@ -1,42 +1,50 @@
 import React, { Component } from 'react';
-import dummyData from './dummy-data';
-import PostsPage from './components/PostContainer/PostsPage'
-import Authenticate from './components/Authentication/Authenticate'
+import dummyData from './assets/dummy-data';
+import Authenticate from './components/Authenticate/authenticate';
 import './App.css';
-
-const AuthenticateComponent = Authenticate(PostsPage) 
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      searchInput: '',
-      dummyData:[]
+      postData: [],
+      searchQuery: '',
+      loggedIn: false,
     }
   }
 
   componentDidMount(){
     this.setState({
-      dummyData: dummyData
+      postData: dummyData,
+      loggedIn: localStorage.getItem('loggedIn')
     })
   }
 
-  searchBar = e => {
+  search = e => {
     this.setState({
-      dummyData: dummyData.filter(cv => {
-          if(cv.username.includes(e.target.value)){
-            return cv
-          }
-        })
+      postData: dummyData.filter(post => {
+        return post.username.includes(e.target.value)
+      })
     })
   }
 
+  login = e => {
+    e.preventDefault();
+    localStorage.setItem('username', e.target.username.value);
+    localStorage.setItem('fullname', e.target.fullname.value);
+    localStorage.setItem('password', e.target.password.value);
+    localStorage.setItem('loggedIn', true);
+    this.setState({loggedIn:true})
+  }
+  
   render() {
     return (
       <div className="App">
-        <AuthenticateComponent 
-          dummyData={this.state.dummyData}
-          handleChange={this.searchBar}
+        <Authenticate 
+          search={this.search} 
+          posts={this.state.postData} 
+          loggedIn={this.state.loggedIn}
+          login={this.login}
         />
       </div>
     );

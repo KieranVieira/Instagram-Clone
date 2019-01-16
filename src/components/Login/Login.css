@@ -31,7 +31,9 @@
     color: grey;
 }
 
-.login-container h3 span{
+.login-container h3 a{
+    color: grey;
+    text-decoration: none;
     font-weight: bold
 }
 

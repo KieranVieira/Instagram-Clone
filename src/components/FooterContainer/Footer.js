@@ -1,5 +1,5 @@
 import React from 'react';
-import './FooterContainer.css';
+import './Footer.css';
 
 const users = [ //Users array simulates recomended users for footer component
     {
@@ -24,7 +24,7 @@ const FooterContainer = props => {
         <div className="footer-container">
 
             <div className="current-user">
-                <img src="https://scontent-yyz1-1.cdninstagram.com/vp/8d9a630b932d18bca14218cdc86bdaf2/5CB69DA2/t51.2885-19/s150x150/28766663_184249188759350_5475249589118304256_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com"/>
+                <img src="https://scontent-yyz1-1.cdninstagram.com/vp/8d9a630b932d18bca14218cdc86bdaf2/5CB69DA2/t51.2885-19/s150x150/28766663_184249188759350_5475249589118304256_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com" alt=""/>
                 <div>
                     <h1>{localStorage.getItem('username')}</h1>
                     <h2>{localStorage.getItem('fullname')}</h2>
@@ -36,10 +36,10 @@ const FooterContainer = props => {
                     <h1>Suggestions For You</h1>
                     <a href="https://kieranvieira.com/">See All</a>
                 </div>
-                {users.map(user => {
+                {users.map((user,index) => {
                     return(
-                        <div className="user-suggestion">
-                            <img src={user.img}/>
+                        <div className="user-suggestion" key={index}>
+                            <img src={user.img} alt=""/>
                             <div className="reccomended-user-name">
                                 <h2>{user.name}</h2>
                                 <p>{user.reccomendedFrom}</p>
@@ -64,7 +64,7 @@ const FooterContainer = props => {
                     <li><a href="https://kieranvieira.com/">Hashtags •</a></li>
                     <li><a href="https://kieranvieira.com/">Language</a></li>
                 </ul>
-                <p><a href="https://kieranvieira.com/" target="_blank">(c) 2018 KIERAN VIEIRA</a></p>
+                <p><a href="https://kieranvieira.com/">(c) 2018 KIERAN VIEIRA</a></p>
             </div>
             
         </div>

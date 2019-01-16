@@ -1,33 +1,18 @@
 import React from 'react';
-import PostContainer from '../PostContainer/PostContainer';
-import SearchBar from '../SearchBar/SearchBar'
-import FooterContainer from '../FooterContainer/FooterContainer'
+import SearchBar from '../SearchBar/SearchBar';
+import PostContainer from './PostContainer';
+import Footer from '../FooterContainer/Footer'
 
-class PostsPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-
-        }
-    }
-
-    render() {
-        return (
-            <>
-                <SearchBar 
-                    handleChange={this.props.handleChange}
-                />
-                <div className="page-content">
-                    <PostContainer 
-                    postData={this.props.dummyData}
-                    />
-                    <FooterContainer 
-                        className="footer-position"
-                    />
-                </div>
-            </>
-        );
-    }
+const PostsPage = (props) => {
+    return(
+        <>
+            <SearchBar search={props.search}/>
+            <div className="page-content">
+                <PostContainer posts={props.posts}/>
+                <Footer className="footer-position"/>
+            </div>
+        </>
+    )
 }
 
-export default PostsPage;
+export default PostsPage

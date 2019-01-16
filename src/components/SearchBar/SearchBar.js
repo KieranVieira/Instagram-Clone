@@ -1,19 +1,19 @@
 import React from 'react';
-import './SearchBar.css';
+import './SearchBar.css'
 
 const SearchBar = props => {
     return(
         <div className="search-bar-main">
             <div className="search-bar-container">
                 <div className="search-bar-left">
-                <a href="https://kieranvieira.com/"><i className="fab fa-instagram"></i> Finstagram </a>
+                <a href="https://kieranvieira.com/"><i className="fab fa-instagram"></i> Instagram </a>
                 </div>
                 <div className="search-bar-middle">
                     <form>
                         <input 
                             type="text" 
-                            placeholder={'Search'}
-                            onChange={props.handleChange}
+                            placeholder="Search"
+                            onChange={props.search}
                         />
                     </form>
                 </div>
