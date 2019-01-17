@@ -1,15 +1,21 @@
 import React from 'react';
-import Post from './Post'
-import PropTypes from 'prop-types'
-import './PostContainer.css'
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+import Post from './Post';
+
+const ContainerPost = styled.div`
+    width: 610px;
+    margin-top: 55px;
+`;
 
 const PostContainer = props => {
     return(
-        <div className="post-container">
+        <ContainerPost>
             {props.posts.map(post => {
                 return <Post postData={post} key={post.timestamp}/>
             })}
-        </div>
+        </ContainerPost>
     )
 }
 

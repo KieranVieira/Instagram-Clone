@@ -1,4 +1,4 @@
-.comment-container{
+/* .comment-container{
     margin: 0 15px;
 }
 
@@ -36,3 +36,6 @@
 .comment-section input::placeholder{
     font-weight: 500;
 }
+.comment-section input:focus{
+    outline: none;
+} */

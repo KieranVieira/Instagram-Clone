@@ -1,7 +1,56 @@
 import React from 'react';
-import CommentSection from '../CommentSection/CommentSection';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import styled from 'styled-components'
+
+import CommentSection from '../CommentSection/CommentSection';
+
+const PostComponent = styled.div`
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin-bottom: 55px;
+    border-radius: 3px;
+    @media (max-width: 660px){
+        width: 98%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .post-header{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        h1{
+            margin: 0 0 2px 7px;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .post-icons{
+        margin: 10px 15px 0 15px;
+        p{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 8px 0;
+        }
+        i{
+            font-size: 3rem;
+            margin-right: 20px;
+        }
+        .fa-heart{
+            color: ${props => props.liked ? '#ED4956' : 'black'};
+        }
+    }
+`;
 
 class Post extends React.Component{
     constructor(props){
@@ -37,7 +86,6 @@ class Post extends React.Component{
     }
 
     likePost = e => {
-        console.log('liked');
         if(!this.state.liked) {
             this.setState({ likes: this.state.likes + 1, liked: true })
             e.target.className = 'fas fa-heart';
@@ -49,7 +97,7 @@ class Post extends React.Component{
 
     render(){
         return(
-            <div className="post">
+            <PostComponent liked={this.state.liked}>
                 <div className="post-header">
                     <img src={this.props.postData.thumbnailUrl} alt={`${this.props.postData.username} profile`}/>
                     <h1>{this.props.postData.username}</h1>
@@ -69,7 +117,7 @@ class Post extends React.Component{
                 commentText={this.state.commentText}
                 addComment={this.addComment}
                 />
-            </div>
+            </PostComponent>
         )
     }
 }

@@ -1,4 +1,4 @@
-.search-bar-main{
+/* .search-bar-main{
     padding: 20px 0;
     border-bottom: 1px solid lightgrey;
     background-color: white;
@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.search-bar-middle form input{
+.search-bar-middle input{
     text-align: center;
     padding: 5px 20px;
     border-radius: 3px;
@@ -62,4 +62,4 @@
     .search-bar-right i{
         margin-left: 5px
     }
-}
+} */

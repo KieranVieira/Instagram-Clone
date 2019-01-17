@@ -1,4 +1,4 @@
-.suggestion-container{
+/* .suggestion-container{
     width: 320px;
     height: 215px;
     margin: 10px 0 25px 25px;
@@ -64,9 +64,9 @@
     font-size: 1.1rem;
     color: grey;
     margin: unset;
-}
+} */
 
-.footer-links{
+/* .footer-links{
     width: 320px;
 }
 
@@ -90,9 +90,9 @@
     font-size: 1.15rem;
     color: #a3a3a3;
     margin: 0 3px 7px 0;
-}
+} */
 
-.current-user{
+/* .current-user{
     margin: 55px 25px 0 25px;
     display: flex
 }
@@ -119,10 +119,10 @@
     font-size: 1.2rem;
     color: grey;
     font-weight: 500;
-}
+} */
 
-@media (max-width:1060px){
+/* @media (max-width:1060px){
     .footer-container{
         display: none;
     }
-}
+} */
