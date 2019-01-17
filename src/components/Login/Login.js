@@ -107,8 +107,8 @@ class Login extends React.Component{
             <h4>OR</h4>
                 <LoginFormContainer>
                     <form onSubmit={this.login}>
-                        <input type="text" name="username" placeholder="Username" required/>
-                        <input type="text" name="fullname" placeholder="Full Name" required/>
+                        <input type="text" name="username" placeholder="Username" required maxLength="32"/>
+                        <input type="text" name="fullname" placeholder="Full Name" required maxLength="32"/>
                         <input type="password" name="password" placeholder="Password" required minLength="4"/>
                         <button type="submit">Sign Up</button>
                     </form>
